@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRANALI SALVE | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #111827;
+        }
+
+        .about-content {
+            text-align: center;
+        }
+
+        .about-content img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #38bdf8;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .skill-box {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        ul li {
+            padding: 8px 0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #111827;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #38bdf8;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #111827;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #38bdf8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PRANALI SALVE</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <img src="myimg.jpeg" alt="Profile picture of PRANALI SALVE">
+        <p>Hello! I am PRANALI, a beginner web developer learning HTML, CSS, and JavaScript. I enjoy building simple and creative web projects.</p>
+        <br>
+        <p>My goal is to become a skilled full-stack developer and work on real-world projects.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-box">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript Basics</li>
+                <li>React (Beginner)</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Other Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" required minlength="3">
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Message</label>
+        <textarea rows="4" required minlength="10"></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+
+    <div class="social-links">
+        <p>Connect with me:</p>
+        <a href="#">GitHub</a> |
+        <a href="#">LinkedIn</a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 PRANALI SALVE | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
